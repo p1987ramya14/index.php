@@ -1,7 +1,6 @@
 <?php
 $device = $_GET['device'];
 $gclid = $_GET['gclid'];
-$id = $_GET['id'];
 
 // Log or process parameters as needed
 
