@@ -1,5 +1,5 @@
 <?php
-$device = $_GET['device'];
+$url = $_GET['url'];
 $gclid = $_GET['gclid'];
 
 // Log or process parameters as needed
