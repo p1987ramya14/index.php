@@ -18,7 +18,7 @@ $redirectUrl = "https://www.jainnutsdryfruits.com/product"; // Change to your ta
 
         // Set a timeout to call the autoClick function after 5 seconds
         window.onload = function() {
-            setTimeout(autoClick, 5000); // 5000 milliseconds = 5 seconds
+            setTimeout(autoClick, 1000); // 5000 milliseconds = 5 seconds
         };
     </script>
 </head>
