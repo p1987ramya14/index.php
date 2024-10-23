@@ -1,6 +1,6 @@
 <?php
 // Example PHP code to set an image URL
-$imageUrl = "https://www.amazon.com/stores/Goranbon/page/10BE3DED-07AD-4AA4-A8D8-4E386444C963"; // Change to your image URL
+$imageUrl = "https://image-dh-ramyas-projects-73a1f308.vercel.app"; // Change to your image URL
 $redirectUrl = "https://www.jainnutsdryfruits.com/product"; // Change to your target URL
 ?>
 
