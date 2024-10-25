@@ -1,22 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
-    <!-- GoTrackier Script -->
-    <script src='https://static-cdn.trackier.com/js/trackier-web-sdk.js'></script>
-    <script>
-        // Track the URL on page load
-        window.onload = function() {
-            window.TrackierWebSDK.trackConvForBrand('das.gotrackier.io', '671a718a64927c86ea07228a', {
-                "is_iframe": true,
-                "tracked_url": "<?php echo 'https://www.jainnutsdryfruits.com/product'; ?>" // Replace with the URL you want to track
-            });
-        };
-    </script>
-</head>
-<body>
-    <!-- Your website content -->
-</body>
-</html>
+<?php
+// Start the session
+session_start();
+
+// Define the landing page URL
+$landingPage = "https://www.jainnutsdryfruits.com/product";
+
+// Check if the user is not already on the landing page
+if ($_SERVER['REQUEST_URI'] !== '/landing-page') {
+    // Redirect to the landing page
+    header("Location: $landingPage");
+    exit(); // Always exit after a redirect to stop further script execution
+}
+?>
